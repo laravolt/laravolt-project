@@ -18,7 +18,13 @@
         "fideloper/proxy": "^4.0",
         "laravel/framework": "5.6.*",
         "laravel/tinker": "^1.0",
-        "laravolt/auth": "dev-master"
+        "laravolt/acl": "dev-master",
+        "laravolt/auth": "dev-master",
+        "laravolt/epicentrum": "dev-master",
+        "laravolt/password": "dev-master",
+        "laravolt/semantic-form": "dev-master",
+        "laravolt/suitable": "dev-master",
+        "laravolt/ui": "dev-master"
     },
     "require-dev": {
         "filp/whoops": "^2.0",
@@ -38,6 +44,7 @@
     },
     "autoload-dev": {
         "psr-4": {
+            "Laravolt\\Etalase\\": "packages/laravolt/etalase/src",
             "Tests\\": "tests/"
         }
     },

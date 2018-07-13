@@ -23,6 +23,18 @@ class AppServiceProvider extends ServiceProvider
      */
     public function register()
     {
+        // $section = $this->app['laravolt.menu']->add('Sample Menu A');
+        // $menu = $section->add('Menu', '#')->data('icon', 'circle outline');
+        // foreach(range(1, 10) as $i) {
+        //     $menu->add('Submenu '.$i, '#');
+        // }
         //
+        // $section = $this->app['laravolt.menu']->add('Sample Menu B');
+        // foreach(range(1, 8) as $h) {
+        //     $menu = $section->add('Menu '.$h, '#')->data('icon', 'circle outline');
+        //     foreach(range(1, 4) as $i) {
+        //         $menu->add('Submenu '.$i, '#');
+        //     }
+        // }
     }
 }

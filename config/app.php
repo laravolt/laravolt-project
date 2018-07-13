@@ -150,6 +150,7 @@ return [
         /*
          * Package Service Providers...
          */
+        \Laravolt\Etalase\ServiceProvider::class,
 
         /*
          * Application Service Providers...
