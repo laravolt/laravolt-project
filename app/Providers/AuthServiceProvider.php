@@ -25,6 +25,11 @@ class AuthServiceProvider extends ServiceProvider
     {
         $this->registerPolicies();
 
-        //
+        // Assume first registered user was superadmin
+        Gate::before(function($user){
+            if ($user->getKey() == 1) {
+                return true;
+            }
+        });
     }
 }
