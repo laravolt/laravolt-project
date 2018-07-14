@@ -21,6 +21,7 @@
         "laravolt/acl": "dev-master",
         "laravolt/auth": "dev-master",
         "laravolt/epicentrum": "dev-master",
+        "laravolt/epilog": "dev-master",
         "laravolt/password": "dev-master",
         "laravolt/semantic-form": "dev-master",
         "laravolt/suitable": "dev-master",
