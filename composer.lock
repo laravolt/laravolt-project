@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "1c22d3c10fb5bffab4311ef936fd5a1e",
+    "content-hash": "b3eb5fc1f0db88833103dcb3892308a9",
     "packages": [
         {
             "name": "anhskohbo/no-captcha",
@@ -1619,6 +1619,58 @@
                 "laravolt",
                 "log",
                 "viewer"
+            ],
+            "transport-options": {
+                "symlink": true
+            }
+        },
+        {
+            "name": "laravolt/etalase",
+            "version": "dev-master",
+            "dist": {
+                "type": "path",
+                "url": "../etalase",
+                "reference": "b0dc574aed4b1d6926a0f96e847e27f63c821759",
+                "shasum": null
+            },
+            "require": {
+                "illuminate/support": "5.4.*|5.5.*|5.6.*",
+                "php": ">=7.0"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "Laravolt\\Etalase\\ServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Laravolt\\Etalase\\": "src"
+                }
+            },
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Bayu Hendra Winata",
+                    "email": "uyab.exe@gmail.com",
+                    "homepage": "http://id-laravel.com",
+                    "role": "Developer"
+                }
+            ],
+            "description": "Sample UI for Larvolt application",
+            "homepage": "https://github.com/laravolt/etalase",
+            "keywords": [
+                "HTML",
+                "Semantic UI",
+                "UI",
+                "component",
+                "laravel",
+                "laravolt",
+                "snippet"
             ],
             "transport-options": {
                 "symlink": true
@@ -5560,6 +5612,7 @@
         "laravolt/auth": 20,
         "laravolt/epicentrum": 20,
         "laravolt/epilog": 20,
+        "laravolt/etalase": 20,
         "laravolt/password": 20,
         "laravolt/semantic-form": 20,
         "laravolt/suitable": 20,
