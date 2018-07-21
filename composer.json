@@ -46,7 +46,6 @@
     },
     "autoload-dev": {
         "psr-4": {
-            "Laravolt\\Etalase\\": "packages/laravolt/etalase/src",
             "Tests\\": "tests/"
         }
     },
