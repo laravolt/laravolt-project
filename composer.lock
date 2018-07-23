@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "b3eb5fc1f0db88833103dcb3892308a9",
+    "content-hash": "087757036da1f9268ca1632bcf90bf0c",
     "packages": [
         {
             "name": "anhskohbo/no-captcha",
@@ -1316,9 +1316,14 @@
         {
             "name": "laravolt/acl",
             "version": "9999999-dev",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/laravolt/acl.git",
+                "reference": "c69d6b9d243f3bbe7b394924917c5ba80e5fbb8a"
+            },
             "dist": {
                 "type": "path",
-                "url": "../acl",
+                "url": "https://api.github.com/repos/laravolt/acl/zipball/c69d6b9d243f3bbe7b394924917c5ba80e5fbb8a",
                 "reference": "c69d6b9d243f3bbe7b394924917c5ba80e5fbb8a",
                 "shasum": null
             },
@@ -1370,10 +1375,15 @@
         {
             "name": "laravolt/auth",
             "version": "9999999-dev",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/laravolt/auth.git",
+                "reference": "edc88a49406e0221b1301b8f6fcd73aa62dc03e6"
+            },
             "dist": {
                 "type": "path",
-                "url": "../auth",
-                "reference": "beeb73d9968325cc697914a092b528a0670d5b5b",
+                "url": "https://api.github.com/repos/laravolt/auth/zipball/edc88a49406e0221b1301b8f6fcd73aa62dc03e6",
+                "reference": "edc88a49406e0221b1301b8f6fcd73aa62dc03e6",
                 "shasum": null
             },
             "require": {
@@ -1510,9 +1520,14 @@
         {
             "name": "laravolt/epicentrum",
             "version": "9999999-dev",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/laravolt/epicentrum.git",
+                "reference": "f8a3993f69f82e14a0e9f0d390e236bdd07b8365"
+            },
             "dist": {
                 "type": "path",
-                "url": "../epicentrum",
+                "url": "https://api.github.com/repos/laravolt/epicentrum/zipball/f8a3993f69f82e14a0e9f0d390e236bdd07b8365",
                 "reference": "f8a3993f69f82e14a0e9f0d390e236bdd07b8365",
                 "shasum": null
             },
@@ -1679,6 +1694,11 @@
         {
             "name": "laravolt/password",
             "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/laravolt/password.git",
+                "reference": "f1585ed7a8631e60550203077c30afb7b128e0c7"
+            },
             "dist": {
                 "type": "zip",
                 "url": "https://api.github.com/repos/laravolt/password/zipball/f1585ed7a8631e60550203077c30afb7b128e0c7",
@@ -1738,9 +1758,14 @@
         {
             "name": "laravolt/semantic-form",
             "version": "9999999-dev",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/laravolt/semantic-form.git",
+                "reference": "779c5687173c5e82b965cfebb094c394e624ee9b"
+            },
             "dist": {
                 "type": "path",
-                "url": "../semantic-form",
+                "url": "https://api.github.com/repos/laravolt/semantic-form/zipball/779c5687173c5e82b965cfebb094c394e624ee9b",
                 "reference": "779c5687173c5e82b965cfebb094c394e624ee9b",
                 "shasum": null
             },
@@ -1801,9 +1826,14 @@
         {
             "name": "laravolt/suitable",
             "version": "9999999-dev",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/laravolt/suitable.git",
+                "reference": "3ee8650c2af61271c2bccefe03b4e29f557277c1"
+            },
             "dist": {
                 "type": "path",
-                "url": "../suitable",
+                "url": "https://api.github.com/repos/laravolt/suitable/zipball/3ee8650c2af61271c2bccefe03b4e29f557277c1",
                 "reference": "3ee8650c2af61271c2bccefe03b4e29f557277c1",
                 "shasum": null
             },
@@ -1870,10 +1900,15 @@
         {
             "name": "laravolt/ui",
             "version": "9999999-dev",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/laravolt/ui.git",
+                "reference": "df055d4b9f74c08e650539c0e1952dbc04a6fa41"
+            },
             "dist": {
                 "type": "path",
-                "url": "../ui",
-                "reference": "b5946e9f1426e71a8b0434c35e2d2eff62d3ba28",
+                "url": "https://api.github.com/repos/laravolt/ui/zipball/df055d4b9f74c08e650539c0e1952dbc04a6fa41",
+                "reference": "df055d4b9f74c08e650539c0e1952dbc04a6fa41",
                 "shasum": null
             },
             "require": {
@@ -3912,6 +3947,74 @@
     ],
     "packages-dev": [
         {
+            "name": "barryvdh/laravel-debugbar",
+            "version": "v3.1.5",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/barryvdh/laravel-debugbar.git",
+                "reference": "d3cdca2ad6cc6e67735b4a63e7551c690a497f5f"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/barryvdh/laravel-debugbar/zipball/d3cdca2ad6cc6e67735b4a63e7551c690a497f5f",
+                "reference": "d3cdca2ad6cc6e67735b4a63e7551c690a497f5f",
+                "shasum": ""
+            },
+            "require": {
+                "illuminate/routing": "5.5.x|5.6.x",
+                "illuminate/session": "5.5.x|5.6.x",
+                "illuminate/support": "5.5.x|5.6.x",
+                "maximebf/debugbar": "~1.15.0",
+                "php": ">=7.0",
+                "symfony/debug": "^3|^4",
+                "symfony/finder": "^3|^4"
+            },
+            "require-dev": {
+                "illuminate/framework": "5.5.x"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "3.2-dev"
+                },
+                "laravel": {
+                    "providers": [
+                        "Barryvdh\\Debugbar\\ServiceProvider"
+                    ],
+                    "aliases": {
+                        "Debugbar": "Barryvdh\\Debugbar\\Facade"
+                    }
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Barryvdh\\Debugbar\\": "src/"
+                },
+                "files": [
+                    "src/helpers.php"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Barry vd. Heuvel",
+                    "email": "barryvdh@gmail.com"
+                }
+            ],
+            "description": "PHP Debugbar integration for Laravel",
+            "keywords": [
+                "debug",
+                "debugbar",
+                "laravel",
+                "profiler",
+                "webprofiler"
+            ],
+            "time": "2018-05-03T18:27:04+00:00"
+        },
+        {
             "name": "doctrine/instantiator",
             "version": "1.1.0",
             "source": {
@@ -4123,6 +4226,67 @@
                 "test"
             ],
             "time": "2016-01-20T08:20:44+00:00"
+        },
+        {
+            "name": "maximebf/debugbar",
+            "version": "v1.15.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/maximebf/php-debugbar.git",
+                "reference": "30e7d60937ee5f1320975ca9bc7bcdd44d500f07"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/maximebf/php-debugbar/zipball/30e7d60937ee5f1320975ca9bc7bcdd44d500f07",
+                "reference": "30e7d60937ee5f1320975ca9bc7bcdd44d500f07",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.0",
+                "psr/log": "^1.0",
+                "symfony/var-dumper": "^2.6|^3.0|^4.0"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "^4.0|^5.0"
+            },
+            "suggest": {
+                "kriswallsmith/assetic": "The best way to manage assets",
+                "monolog/monolog": "Log using Monolog",
+                "predis/predis": "Redis storage"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.14-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "DebugBar\\": "src/DebugBar/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Maxime Bouroumeau-Fuseau",
+                    "email": "maxime.bouroumeau@gmail.com",
+                    "homepage": "http://maximebf.com"
+                },
+                {
+                    "name": "Barry vd. Heuvel",
+                    "email": "barryvdh@gmail.com"
+                }
+            ],
+            "description": "Debug bar in the browser for php application",
+            "homepage": "https://github.com/maximebf/php-debugbar",
+            "keywords": [
+                "debug",
+                "debugbar"
+            ],
+            "time": "2017-12-15T11:13:46+00:00"
         },
         {
             "name": "mockery/mockery",
