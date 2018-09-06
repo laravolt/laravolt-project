@@ -3,8 +3,10 @@
 namespace App\Exceptions;
 
 use Exception;
+use Illuminate\Auth\Access\AuthorizationException;
 use Illuminate\Auth\AuthenticationException;
 use Illuminate\Foundation\Exceptions\Handler as ExceptionHandler;
+use Illuminate\Session\TokenMismatchException;
 
 class Handler extends ExceptionHandler
 {
@@ -47,6 +49,14 @@ class Handler extends ExceptionHandler
      */
     public function render($request, Exception $exception)
     {
+        if ($exception instanceof TokenMismatchException){
+            return back()->withError('Kami mendeteksi tidak ada aktivitas cukup lama, silakan ulangi aksi sebelumnya');
+        }
+
+        if ($exception instanceof AuthorizationException) {
+            return redirect()->back()->withError('Anda tidak diizinkan mengakses halaman '.$request->fullUrl());
+        }
+
         return parent::render($request, $exception);
     }
 
