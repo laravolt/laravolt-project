@@ -12,5 +12,7 @@ class DatabaseSeeder extends Seeder
     public function run()
     {
         app('laravolt.acl')->syncPermission();
+        $this->call(RootSeeder::class);
+        $this->call(UserSeeder::class);
     }
 }
