@@ -150,7 +150,7 @@ return [
         /*
          * Package Service Providers...
          */
-
+        \Laravolt\Collab\ServiceProvider::class,
         /*
          * Application Service Providers...
          */
