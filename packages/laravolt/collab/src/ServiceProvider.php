@@ -16,7 +16,9 @@ class ServiceProvider extends BaseServiceProvider
      */
     public function register()
     {
-
+        $this->app->singleton('laravolt.collab', function(){
+            return new Collab(config('laravolt.collab.connection'));
+        });
     }
 
     /**

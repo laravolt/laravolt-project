@@ -27,7 +27,8 @@
         "laravolt/password": "dev-master",
         "laravolt/semantic-form": "dev-master",
         "laravolt/suitable": "dev-master",
-        "laravolt/ui": "dev-master"
+        "laravolt/ui": "dev-master",
+        "spatie/laravel-html": "^2.19"
     },
     "require-dev": {
         "barryvdh/laravel-debugbar": "^3.1",
