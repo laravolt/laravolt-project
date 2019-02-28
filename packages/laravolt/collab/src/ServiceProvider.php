@@ -4,6 +4,7 @@ namespace Laravolt\Collab;
 
 use Illuminate\Routing\Router;
 use Illuminate\Support\ServiceProvider as BaseServiceProvider;
+use Laravolt\Collab\Console\Commands\Pull;
 use Laravolt\Collab\Http\Controllers\ProjectController;
 
 class ServiceProvider extends BaseServiceProvider
@@ -35,6 +36,12 @@ class ServiceProvider extends BaseServiceProvider
         if (!$this->app->routesAreCached()) {
             $this->registerRoutes();
         }
+
+        if ($this->app->runningInConsole()) {
+            $this->commands([Pull::class]);
+        }
+
+        $this->loadMigrationsFrom($this->packagePath('database/migrations'));
 
     }
 

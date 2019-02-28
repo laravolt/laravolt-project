@@ -47,7 +47,7 @@ class Collab
     {
         $tasks = $this->client()->get("projects/$id/tasks")->getJson();
 
-        foreach($tasks as $task)
+        foreach($tasks['tasks'] as $task)
         {
             $task = $this->client()->get("projects/$id/tasks/".$task['id'])->getJson();
             foreach($task['subtasks'] as $subtask) {
