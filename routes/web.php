@@ -12,3 +12,4 @@
 */
 
 Route::redirect('/', 'auth/login');
+Route::get('home', \App\Http\Controllers\Home::class)->name('home');
