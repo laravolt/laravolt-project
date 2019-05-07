@@ -166,6 +166,7 @@ return [
         /*
          * Package Service Providers...
          */
+        Laravolt\Cms\ServiceProvider::class,
 
         /*
          * Application Service Providers...

@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "1176cf04f7c7d21c9ea227c9a5a9ccd8",
+    "content-hash": "bd3001acb7397a21a2299e05456452e5",
     "packages": [
         {
             "name": "anhskohbo/no-captcha",
@@ -1598,6 +1598,50 @@
             }
         },
         {
+            "name": "laravolt/blank",
+            "version": "dev-master",
+            "dist": {
+                "type": "path",
+                "url": "../blank",
+                "reference": "68e140b096423bec849f08dc2a64eeb4aa05d1ca",
+                "shasum": null
+            },
+            "require": {
+                "illuminate/database": "5.8.*",
+                "php": ">=7.2.0"
+            },
+            "require-dev": {
+                "codedungeon/phpunit-result-printer": "^0.26.1",
+                "orchestra/database": "^3.8",
+                "orchestra/testbench": "^3.8",
+                "phpunit/phpunit": "^8.0"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Laravolt\\Blank\\": "src"
+                }
+            },
+            "autoload-dev": {
+                "psr-4": {
+                    "Laravolt\\Blank\\Tests\\": "tests"
+                }
+            },
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Bayu Hendra Winata",
+                    "email": "bayu.hendra@javan.co.id"
+                }
+            ],
+            "description": "Manage content with the power of Eloquent",
+            "transport-options": {
+                "symlink": true
+            }
+        },
+        {
             "name": "laravolt/epicentrum",
             "version": "dev-master",
             "dist": {
@@ -1711,6 +1755,129 @@
                 "laravel",
                 "laravolt",
                 "snippet"
+            ],
+            "transport-options": {
+                "symlink": true
+            }
+        },
+        {
+            "name": "laravolt/indonesia",
+            "version": "v0.9",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/laravolt/indonesia.git",
+                "reference": "27a4c89ec3a934df3c64fce898dbbd8a6250ff0d"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/laravolt/indonesia/zipball/27a4c89ec3a934df3c64fce898dbbd8a6250ff0d",
+                "reference": "27a4c89ec3a934df3c64fce898dbbd8a6250ff0d",
+                "shasum": ""
+            },
+            "require": {
+                "illuminate/support": "~5.2",
+                "php": ">=5.5.0"
+            },
+            "require-dev": {
+                "orchestra/testbench": "~3.0",
+                "phpunit/phpunit": "4.*",
+                "squizlabs/php_codesniffer": "2.*"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.0-dev"
+                },
+                "laravel": {
+                    "providers": [
+                        "Laravolt\\Indonesia\\ServiceProvider"
+                    ],
+                    "aliases": {
+                        "Indonesia": "Laravolt\\Indonesia\\Facade"
+                    }
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Laravolt\\Indonesia\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Deri Ramdani",
+                    "email": "deri.ramdani1@gmail.com"
+                },
+                {
+                    "name": "Akbar Adhatama",
+                    "email": "am.adhatama@gmail.com"
+                }
+            ],
+            "description": "Package Laravel yang berisi data Provinsi, Kabupaten/Kota, Kecamatan, dan Keluarahan/Desa di seluruh Indonesia.",
+            "keywords": [
+                "desa",
+                "indonesia",
+                "kabupaten",
+                "kecamatan",
+                "kelurahan",
+                "kota",
+                "laravel",
+                "laravolt",
+                "provinsi"
+            ],
+            "time": "2019-04-04T09:46:03+00:00"
+        },
+        {
+            "name": "laravolt/mailkeeper",
+            "version": "dev-master",
+            "dist": {
+                "type": "path",
+                "url": "../mailkeeper",
+                "reference": "c1cb0bbe382ebc4a967888810a288c80ff3da871",
+                "shasum": null
+            },
+            "require": {
+                "illuminate/support": "~5.4",
+                "php": "^7.1.3"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.0-dev"
+                },
+                "laravel": {
+                    "providers": [
+                        "Laravolt\\Mailkeeper\\ServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Laravolt\\Mailkeeper\\": "src"
+                }
+            },
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Bayu Hendra Winata",
+                    "email": "uyab.exe@gmail.com",
+                    "homepage": "http://id-laravel.com",
+                    "role": "Developer"
+                }
+            ],
+            "description": "Save mail to database for further use",
+            "homepage": "https://github.com/laravolt/mailkeeper",
+            "keywords": [
+                "database",
+                "email",
+                "laravel",
+                "laravolt",
+                "mail"
             ],
             "transport-options": {
                 "symlink": true
@@ -6281,11 +6448,13 @@
     "stability-flags": {
         "laravolt/auth": 20,
         "laravolt/avatar": 20,
+        "laravolt/blank": 20,
         "laravolt/epicentrum": 20,
         "laravolt/etalase": 20,
+        "laravolt/mailkeeper": 20,
         "laravolt/password": 20,
-        "laravolt/suitable": 20,
         "laravolt/semantic-form": 20,
+        "laravolt/suitable": 20,
         "laravolt/ui": 20
     },
     "prefer-stable": true,

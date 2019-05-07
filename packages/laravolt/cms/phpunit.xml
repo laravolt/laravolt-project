@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<phpunit
+        printerClass="Codedungeon\PHPUnitPrettyResultPrinter\Printer"
+        colors="true"
+        bootstrap="vendor/autoload.php">
+    <testsuites>
+        <testsuite name="Laravolt Cms Test Suite">
+            <directory>tests</directory>
+        </testsuite>
+    </testsuites>
+
+    <php>
+        <env name="APP_KEY" value="base64:Hu6gTLfCq3i6ZB1PLiwnbHfyTWVY1XBK54edL5DqBaY="/>
+        <env name="DB_HOST" value="127.0.0.1"/>
+        <env name="DB_DATABASE" value="3f_cms"/>
+        <env name="DB_USERNAME" value="root"/>
+        <env name="DB_PASSWORD" value="root"/>
+    </php>
+</phpunit>
