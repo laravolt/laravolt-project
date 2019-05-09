@@ -166,6 +166,7 @@ return [
         /*
          * Package Service Providers...
          */
+        \Laravolt\Thunderclap\ServiceProvider::class,
 
         /*
          * Application Service Providers...

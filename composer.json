@@ -7,6 +7,15 @@
         "laravel"
     ],
     "license": "MIT",
+    "repositories": [
+        {
+            "type": "path",
+            "url": "../*",
+            "options": {
+                "symlink": true
+            }
+        }
+    ],
     "require": {
         "php": "^7.1.3",
         "fideloper/proxy": "^4.0",
@@ -16,9 +25,11 @@
         "laravolt/avatar": "dev-master",
         "laravolt/epicentrum": "dev-master",
         "laravolt/etalase": "dev-master",
+        "laravolt/packer": "dev-master",
         "laravolt/password": "dev-master",
-        "laravolt/suitable": "dev-master",
         "laravolt/semantic-form": "dev-master as 2.x-dev",
+        "laravolt/suitable": "dev-master",
+        "laravolt/thunderclap": "dev-master",
         "laravolt/ui": "dev-master"
     },
     "require-dev": {

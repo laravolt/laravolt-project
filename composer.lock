@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "1176cf04f7c7d21c9ea227c9a5a9ccd8",
+    "content-hash": "ca1b4bbcefb9d76ffe015dcc6581ef37",
     "packages": [
         {
             "name": "anhskohbo/no-captcha",
@@ -1401,7 +1401,7 @@
             "version": "dev-master",
             "dist": {
                 "type": "path",
-                "url": "../acl",
+                "url": "https://api.github.com/repos/laravolt/acl/zipball/394a615acb06b229d3c9a193cf9ee4b7fd73c793",
                 "reference": "394a615acb06b229d3c9a193cf9ee4b7fd73c793",
                 "shasum": null
             },
@@ -1530,7 +1530,7 @@
             "version": "dev-master",
             "dist": {
                 "type": "path",
-                "url": "../avatar",
+                "url": "https://api.github.com/repos/laravolt/avatar/zipball/0bd373ca7f19600b9b78316dffafba9247cdfbc2",
                 "reference": "0bd373ca7f19600b9b78316dffafba9247cdfbc2",
                 "shasum": null
             },
@@ -1711,6 +1711,58 @@
                 "laravel",
                 "laravolt",
                 "snippet"
+            ],
+            "transport-options": {
+                "symlink": true
+            }
+        },
+        {
+            "name": "laravolt/packer",
+            "version": "dev-master",
+            "dist": {
+                "type": "path",
+                "url": "../packer",
+                "reference": "3685a2d881fcbb6fa743915032958785280bc1e0",
+                "shasum": null
+            },
+            "require": {
+                "illuminate/console": "~5.2",
+                "illuminate/filesystem": "~5.2",
+                "illuminate/support": "~5.2"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "2.0-dev"
+                },
+                "laravel": {
+                    "providers": [
+                        "Laravolt\\Packer\\PackerServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Laravolt\\Packer\\": "src"
+                }
+            },
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Bayu Hendra",
+                    "email": "uyab.exe@gmail.com",
+                    "homepage": "https://github.com/uyab"
+                }
+            ],
+            "description": "A cli tool for creating Laravel packages.",
+            "homepage": "https://github.com/laravolt/packer",
+            "keywords": [
+                "Laravel",
+                "Packer",
+                "package",
+                "skeleton"
             ],
             "transport-options": {
                 "symlink": true
@@ -1922,6 +1974,66 @@
                 "semantic UI",
                 "suitable",
                 "table"
+            ],
+            "transport-options": {
+                "symlink": true
+            }
+        },
+        {
+            "name": "laravolt/thunderclap",
+            "version": "dev-master",
+            "dist": {
+                "type": "path",
+                "url": "../thunderclap",
+                "reference": "bbd4e2d7a5166149891f92c6975d6503d005ce46",
+                "shasum": null
+            },
+            "require": {
+                "illuminate/support": "5.5.*|5.6.*|5.7.*|5.8.*",
+                "php": ">=7.0"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "^7.0"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.0-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Laravolt\\Thunderclap\\": "src"
+                }
+            },
+            "autoload-dev": {
+                "psr-4": {
+                    "Laravolt\\Thunderclap\\Test\\": "tests"
+                }
+            },
+            "scripts": {
+                "test": [
+                    "phpunit"
+                ]
+            },
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Bayu Hendra Winata",
+                    "email": "uyab.exe@gmail.com",
+                    "homepage": "http://id-laravel.com",
+                    "role": "Developer"
+                }
+            ],
+            "description": "Laravel CRUD generator",
+            "homepage": "https://github.com/laravolt/thunderclap",
+            "keywords": [
+                "crud",
+                "generator",
+                "laravel",
+                "laravolt"
             ],
             "transport-options": {
                 "symlink": true
@@ -6283,9 +6395,11 @@
         "laravolt/avatar": 20,
         "laravolt/epicentrum": 20,
         "laravolt/etalase": 20,
+        "laravolt/packer": 20,
         "laravolt/password": 20,
-        "laravolt/suitable": 20,
         "laravolt/semantic-form": 20,
+        "laravolt/suitable": 20,
+        "laravolt/thunderclap": 20,
         "laravolt/ui": 20
     },
     "prefer-stable": true,
