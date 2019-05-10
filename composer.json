@@ -30,9 +30,12 @@
         "laravolt/semantic-form": "dev-master as 2.x-dev",
         "laravolt/suitable": "dev-master",
         "laravolt/thunderclap": "dev-master",
-        "laravolt/ui": "dev-master"
+        "laravolt/ui": "dev-master",
+        "nwidart/laravel-modules": "^5.0",
+        "sofa/eloquence": "^5.6"
     },
     "require-dev": {
+        "barryvdh/laravel-debugbar": "^3.2",
         "beyondcode/laravel-dump-server": "^1.0",
         "filp/whoops": "^2.0",
         "fzaninotto/faker": "^1.4",
@@ -52,7 +55,8 @@
     },
     "autoload": {
         "psr-4": {
-            "App\\": "app/"
+            "App\\": "app/",
+            "Modules\\": "modules/"
         },
         "classmap": [
             "database/seeds",

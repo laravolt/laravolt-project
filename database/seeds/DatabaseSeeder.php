@@ -14,5 +14,6 @@ class DatabaseSeeder extends Seeder
         app('laravolt.acl')->syncPermission();
         $this->call(RootSeeder::class);
         $this->call(UserSeeder::class);
+        $this->call(PostSeeder::class);
     }
 }
