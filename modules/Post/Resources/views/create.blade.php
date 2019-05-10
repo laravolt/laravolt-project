@@ -16,9 +16,9 @@
     </div>
 
     {!! form()->post(route('post.store')) !!}
-    {!! form()->text('title')->label('Title') !!}
-    {!! form()->text('content')->label('Content') !!}
-    {!! form()->text('author_id')->label('Author ID') !!}
+                    {!! SemanticForm::text('title')->label('Title') !!}
+                    {!! SemanticForm::text('content')->label('Content') !!}
+                    {!! SemanticForm::text('author_id')->label('Author') !!}
     {!! form()->submit('Save') !!}
     {!! form()->link('Cancel', route('post.index')) !!}
     {!! form()->open() !!}

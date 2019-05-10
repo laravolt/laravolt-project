@@ -16,12 +16,12 @@
     </div>
 
     <table class="ui table definition">
-        <tr><td>ID</td><td>{{ $post->getKey() }}</td></tr>
-        <tr><td>Title</td><td>{{ $post->title }}</td></tr>
-        <tr><td>Content</td><td>{{ $post->content }}</td></tr>
-        <tr><td>Author ID</td><td>{{ $post->author_id }}</td></tr>
-        <tr><td>Created At</td><td>{{ $post->created_at }}</td></tr>
-        <tr><td>Updated At</td><td>{{ $post->updated_at }}</td></tr>
+                <tr><td>Id</td><td>{{ $post->id }}</td></tr>
+                <tr><td>Title</td><td>{{ $post->title }}</td></tr>
+                <tr><td>Content</td><td>{{ $post->content }}</td></tr>
+                <tr><td>Author</td><td>{{ $post->author_id }}</td></tr>
+                <tr><td>Created at</td><td>{{ $post->created_at }}</td></tr>
+                <tr><td>Updated at</td><td>{{ $post->updated_at }}</td></tr>
     </table>
 
 @stop

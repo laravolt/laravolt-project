@@ -13,5 +13,5 @@ class Post extends Model
 
     protected $guarded = [];
 
-    protected $searchableColumns = ['title', 'content'];
+    protected $searchableColumns = ["title", "content",];
 }
