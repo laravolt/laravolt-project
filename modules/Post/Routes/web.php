@@ -18,6 +18,6 @@ Route::group(
         'middleware' => ['web', 'auth'],
     ],
     function () {
-        Route::resource('post', 'Controller');
+        Route::resource('post', 'PostController');
     }
 );

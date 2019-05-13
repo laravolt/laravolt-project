@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "a773517343e7c89df2d2498ac7752cac",
+    "content-hash": "73fc4e90f17146e70e3e155d026ae944",
     "packages": [
         {
             "name": "anhskohbo/no-captcha",
@@ -1717,56 +1717,61 @@
             }
         },
         {
-            "name": "laravolt/packer",
-            "version": "dev-master",
+            "name": "laravolt/mailkeeper",
+            "version": "0.4",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/laravolt/mailkeeper.git",
+                "reference": "6c403203e6ce5628b1607db3124a3c6642030f74"
+            },
             "dist": {
-                "type": "path",
-                "url": "../packer",
-                "reference": "3685a2d881fcbb6fa743915032958785280bc1e0",
-                "shasum": null
+                "type": "zip",
+                "url": "https://api.github.com/repos/laravolt/mailkeeper/zipball/6c403203e6ce5628b1607db3124a3c6642030f74",
+                "reference": "6c403203e6ce5628b1607db3124a3c6642030f74",
+                "shasum": ""
             },
             "require": {
-                "illuminate/console": "~5.2",
-                "illuminate/filesystem": "~5.2",
-                "illuminate/support": "~5.2"
+                "illuminate/support": "~5.4",
+                "php": "^7.1.3"
             },
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "2.0-dev"
+                    "dev-master": "1.0-dev"
                 },
                 "laravel": {
                     "providers": [
-                        "Laravolt\\Packer\\PackerServiceProvider"
+                        "Laravolt\\Mailkeeper\\ServiceProvider"
                     ]
                 }
             },
             "autoload": {
                 "psr-4": {
-                    "Laravolt\\Packer\\": "src"
+                    "Laravolt\\Mailkeeper\\": "src"
                 }
             },
+            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "MIT"
             ],
             "authors": [
                 {
-                    "name": "Bayu Hendra",
+                    "name": "Bayu Hendra Winata",
                     "email": "uyab.exe@gmail.com",
-                    "homepage": "https://github.com/uyab"
+                    "homepage": "http://id-laravel.com",
+                    "role": "Developer"
                 }
             ],
-            "description": "A cli tool for creating Laravel packages.",
-            "homepage": "https://github.com/laravolt/packer",
+            "description": "Save mail to database for further use",
+            "homepage": "https://github.com/laravolt/mailkeeper",
             "keywords": [
-                "Laravel",
-                "Packer",
-                "package",
-                "skeleton"
+                "database",
+                "email",
+                "laravel",
+                "laravolt",
+                "mail"
             ],
-            "transport-options": {
-                "symlink": true
-            }
+            "time": "2019-04-09T06:27:40+00:00"
         },
         {
             "name": "laravolt/password",
@@ -6970,7 +6975,6 @@
         "laravolt/avatar": 20,
         "laravolt/epicentrum": 20,
         "laravolt/etalase": 20,
-        "laravolt/packer": 20,
         "laravolt/password": 20,
         "laravolt/semantic-form": 20,
         "laravolt/suitable": 20,

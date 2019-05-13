@@ -15,3 +15,20 @@
 
     {!! $table !!}
 @stop
+
+@push('script')
+    <script>
+      $(function () {
+        $('[data-role=suitable-header-searchable]').on('keypress', 'input[type=text]', function (e) {
+          if (e.which == 13) {
+            $('[data-role=suitable-form-searchable]').submit();
+          }
+        });
+        $('[data-role=suitable-header-searchable] .ui.dropdown').dropdown({
+          onChange: function(val) {
+            $('[data-role=suitable-form-searchable]').submit();
+          }
+        });
+      });
+    </script>
+@endpush

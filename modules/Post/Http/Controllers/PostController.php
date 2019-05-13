@@ -2,17 +2,16 @@
 
 namespace Modules\Post\Http\Controllers;
 
-use Laravolt\Suitable\Tables\BasicTable;
 use Modules\Post\Http\Requests\Store;
 use Modules\Post\Http\Requests\Update;
 use Modules\Post\Models\Post;
 use Modules\Post\TableView\IndexTableView;
 
-class Controller extends \Illuminate\Routing\Controller
+class PostController extends \Illuminate\Routing\Controller
 {
     public function index()
     {
-        $items = Post::autoSort()->latest()->search(request('search'))->paginate();
+        $items = Post::autoSort()->autoFilter()->latest()->search(request('search'))->paginate();
 
         return (IndexTableView::make($items))->view('post::index');
     }

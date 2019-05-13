@@ -25,7 +25,7 @@
         "laravolt/avatar": "dev-master",
         "laravolt/epicentrum": "dev-master",
         "laravolt/etalase": "dev-master",
-        "laravolt/packer": "dev-master",
+        "laravolt/mailkeeper": "^0.4.0",
         "laravolt/password": "dev-master",
         "laravolt/semantic-form": "dev-master as 2.x-dev",
         "laravolt/suitable": "dev-master",
