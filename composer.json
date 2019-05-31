@@ -7,30 +7,21 @@
         "laravel"
     ],
     "license": "MIT",
-    "repositories": [
-        {
-            "type": "path",
-            "url": "../*",
-            "options": {
-                "symlink": true
-            }
-        }
-    ],
     "require": {
         "php": "^7.1.3",
         "fideloper/proxy": "^4.0",
         "laravel/framework": "5.8.*",
         "laravel/tinker": "^1.0",
-        "laravolt/auth": "dev-master",
-        "laravolt/avatar": "dev-master",
-        "laravolt/epicentrum": "dev-master",
-        "laravolt/etalase": "dev-master",
-        "laravolt/mailkeeper": "^0.4.0",
-        "laravolt/password": "dev-master",
-        "laravolt/semantic-form": "dev-master as 2.x-dev",
-        "laravolt/suitable": "dev-master",
-        "laravolt/thunderclap": "dev-master",
-        "laravolt/ui": "dev-master",
+        "laravolt/auth": "^4.6",
+        "laravolt/avatar": "^2.2",
+        "laravolt/epicentrum": "^0.25.0",
+        "laravolt/etalase": "~0.4",
+        "laravolt/mailkeeper": "~0.7",
+        "laravolt/password": "^1.3",
+        "laravolt/semantic-form": "^2.2",
+        "laravolt/suitable": "^3.3",
+        "laravolt/thunderclap": "~0.7",
+        "laravolt/ui": "~0.7",
         "nwidart/laravel-modules": "^5.0",
         "sofa/eloquence": "^5.6"
     },
