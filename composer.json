@@ -12,14 +12,14 @@
         "fideloper/proxy": "^4.0",
         "laravel/framework": "5.8.*",
         "laravel/tinker": "^1.0",
-        "laravolt/auth": "dev-master",
-        "laravolt/avatar": "dev-master",
-        "laravolt/epicentrum": "dev-master",
-        "laravolt/etalase": "dev-master",
-        "laravolt/password": "dev-master",
-        "laravolt/suitable": "dev-master",
-        "laravolt/semantic-form": "dev-master as 2.x-dev",
-        "laravolt/ui": "dev-master"
+        "laravolt/acl": "^4.1",
+        "laravolt/auth": "^4.7",
+        "laravolt/avatar": "^2.2",
+        "laravolt/epicentrum": "^1.0",
+        "laravolt/mailkeeper": "^0.9.0",
+        "laravolt/semantic-form": "^2.2",
+        "laravolt/suitable": "^3.3",
+        "laravolt/ui": "^0.7.2"
     },
     "require-dev": {
         "beyondcode/laravel-dump-server": "^1.0",
