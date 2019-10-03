@@ -21,7 +21,8 @@
         "laravolt/semantic-form": "^2.6",
         "laravolt/suitable": "^3.5",
         "laravolt/thunderclap": "~0.15",
-        "laravolt/ui": "~0.14"
+        "laravolt/ui": "~0.14",
+        "spatie/laravel-medialibrary": "^7.0.0"
     },
     "require-dev": {
         "facade/ignition": "^1.4",
