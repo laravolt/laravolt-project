@@ -12,10 +12,12 @@ class RootSeeder extends Seeder
     public function run()
     {
         $root = \Laravolt\Acl\Models\Role::create(['name' => 'Root']);
-        $root->syncPermission(app('laravolt.acl')->permissions());
+        $root->addPermission('*');
 
-        $rootUser = factory(config('auth.providers.users.model'))->create(['email' => 'root@laravolt.app']);
+        $rootUser = factory(config('auth.providers.users.model'))->create([
+            'email' => 'root@laravolt.app',
+            'status' => \App\Enums\UserStatus::ACTIVE,
+        ]);
         $rootUser->assignRole($root);
-
     }
 }
