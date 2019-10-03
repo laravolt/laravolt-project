@@ -13,8 +13,8 @@ return [
     |
     */
 
-    'name' => env('APP_NAME', 'Laravel'),
-    'description' => env('APP_DESCRIPTION', 'The PHP Framework For Web Artisans'),
+    'name' => env('APP_NAME', 'Laravolt'),
+    'description' => env('APP_DESCRIPTION', 'Membuat Sistem Informasi 2 Minggu Jadi'),
 
     /*
     |--------------------------------------------------------------------------
