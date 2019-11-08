@@ -5,14 +5,14 @@ return [
     'captcha'      => false,
     'identifier'   => 'email',
     'login'        => [
-        'implementation' => \Laravolt\Auth\DefaultLogin::class,
+        'implementation' => \Laravolt\Auth\Login::class,
         'max_attempts' => 5,
         'decay_minutes' => 1,
     ],
     'registration' => [
         'enable'         => true,
         'status'         => \App\Enums\UserStatus::ACTIVE,
-        'implementation' => \Laravolt\Auth\DefaultUserRegistrar::class,
+        'implementation' => \Laravolt\Auth\UserRegistrar::class,
     ],
     'activation'   => [
         'enable'        => true,
@@ -21,11 +21,11 @@ return [
     ],
     'password' => [
         'forgot' => [
-            'implementation' => \Laravolt\Auth\DefaultForgotPassword::class,
+            'implementation' => \Laravolt\Auth\ForgotPassword::class,
             'identifier' => null
         ],
         'reset' => [
-            'implementation' => \Laravolt\Auth\DefaultResetPassword::class,
+            'implementation' => \Laravolt\Auth\ResetPassword::class,
             'identifier' => null,
             'auto_login' => false,
         ],
