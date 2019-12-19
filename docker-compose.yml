@@ -1,0 +1,40 @@
+version: '3.7'
+services:
+  web:
+    container_name: virtual-library-web
+    restart: always
+    build:
+      context: ./
+      dockerfile: docker/web.dockerfile
+    volumes:
+      - './:/var/www'
+    ports:
+      - '${WEB_HOST_PORT:-8080}:80'
+    networks:
+      - ppsdm-app-network
+  app:
+    container_name: virtual-library-app
+    restart: always
+    build:
+      context: ./
+      dockerfile: docker/app.dockerfile
+    volumes:
+      - './:/var/www'
+    networks:
+      - ppsdm-app-network
+  db:
+    container_name: virtual-library-db
+    restart: always
+    image: 'postgres:10.10'
+    environment:
+      POSTGRES_PASSWORD: '${POSTGRES_PASSWORD:-postgres}'
+      POSTGRES_USER: '${POSTGRES_USER:-postgres}'
+      POSTGRES_DB: '${POSTGRES_DB:-virtual-library}'
+      PGDATA: /var/lib/postgresql/data/virtual-library
+    ports:
+      - '${POSTGRESQL_HOST_PORT:-5434}:5432'
+    networks:
+      - ppsdm-app-network
+networks:
+  ppsdm-app-network:
+    external: true
