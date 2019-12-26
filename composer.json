@@ -13,7 +13,7 @@
         "laravel/framework": "^6.4",
         "laravel/tinker": "^1.0",
         "laravolt/avatar": "^3.0",
-        "laravolt/epicentrum": "^1.1",
+        "laravolt/epicentrum": "dev-develop",
         "laravolt/mailkeeper": "~0.10.0",
         "laravolt/platform": "~0.2",
         "laravolt/semantic-form": "^2.6",
