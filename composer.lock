@@ -1517,21 +1517,22 @@
         },
         {
             "name": "laravolt/semantic-form",
-            "version": "2.7.0",
+            "version": "2.11.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/laravolt/semantic-form.git",
-                "reference": "17c6553c772dd3c62433d4f34b12597da735188f"
+                "reference": "416bc82fae4aa71377a196084d369ab4e0072b0d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/laravolt/semantic-form/zipball/17c6553c772dd3c62433d4f34b12597da735188f",
-                "reference": "17c6553c772dd3c62433d4f34b12597da735188f",
+                "url": "https://api.github.com/repos/laravolt/semantic-form/zipball/416bc82fae4aa71377a196084d369ab4e0072b0d",
+                "reference": "416bc82fae4aa71377a196084d369ab4e0072b0d",
                 "shasum": ""
             },
             "require": {
                 "illuminate/support": "5.6.*|5.7.*|5.8.*|6.*",
                 "jenssegers/date": "^3.4",
+                "myclabs/deep-copy": "^1.9",
                 "nesbot/carbon": "1.25.* || ^2.0",
                 "php": ">=7.2"
             },
@@ -1584,7 +1585,7 @@
                 "laravolt",
                 "semantic ui"
             ],
-            "time": "2019-10-18T09:17:57+00:00"
+            "time": "2019-12-12T02:13:39+00:00"
         },
         {
             "name": "laravolt/suitable",
