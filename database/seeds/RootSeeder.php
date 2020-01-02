@@ -11,7 +11,7 @@ class RootSeeder extends Seeder
      */
     public function run()
     {
-        $root = \Laravolt\Acl\Models\Role::create(['name' => 'Root']);
+        $root = config('laravolt.epicentrum.models.role')::create(['name' => 'Root']);
         $root->addPermission('*');
 
         $rootUser = factory(config('auth.providers.users.model'))->create([
