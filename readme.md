@@ -1,3 +1,5 @@
+> **Archived.** This application skeleton is no longer maintained. Start new projects with [laravolt/laravel-starter-kit](https://github.com/laravolt/laravel-starter-kit). Docs: https://laravolt.dev
+
 # LARAVOLT
 
 Laravolt adalah platform untuk mengembangkan aplikasi berbasis web. Tujuan yang hendak dicapai adalah:
